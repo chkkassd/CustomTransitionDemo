@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FirstCustomSegueUnwind.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)returnFromSegueActions:(UIStoryboardSegue *)sender {
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
+    if ([identifier isEqualToString:@"idFirstSegueUnwind"]) {
+        return [[FirstCustomSegueUnwind alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
+    }
+    
+    return [super segueForUnwindingToViewController:toViewController fromViewController:fromViewController identifier:identifier];
 }
 
 @end

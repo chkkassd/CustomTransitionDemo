@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		914EF6D71B3BA621001CC0BA /* Nav.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D21B3BA621001CC0BA /* Nav.m */; };
+		914EF6D81B3BA621001CC0BA /* NavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D41B3BA621001CC0BA /* NavigationInteractiveTransition.m */; };
+		914EF6D91B3BA621001CC0BA /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D61B3BA621001CC0BA /* PopAnimation.m */; };
+		91839E2F1B47B54200035CA6 /* FirstCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E281B47B54200035CA6 /* FirstCustomSegue.m */; };
+		91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2A1B47B54200035CA6 /* FirstCustomSegueUnwind.m */; };
+		91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */; };
+		91839E321B47B54200035CA6 /* SecondCustomSegueUnwind.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2E1B47B54200035CA6 /* SecondCustomSegueUnwind.m */; };
 		91EFB4541B3944BA00516319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4531B3944BA00516319 /* main.m */; };
 		91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4561B3944BA00516319 /* AppDelegate.m */; };
 		91EFB45A1B3944BA00516319 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4591B3944BA00516319 /* ViewController.m */; };
@@ -14,6 +21,8 @@
 		91EFB45F1B3944BA00516319 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EFB45E1B3944BA00516319 /* Images.xcassets */; };
 		91EFB4621B3944BA00516319 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91EFB4601B3944BA00516319 /* LaunchScreen.xib */; };
 		91EFB46E1B3944BA00516319 /* CustomerTrasitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB46D1B3944BA00516319 /* CustomerTrasitionDemoTests.m */; };
+		91EFB4791B394BC600516319 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4781B394BC600516319 /* secondViewController.m */; };
+		91EFB47C1B394BD500516319 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB47B1B394BD500516319 /* thirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		914EF6D11B3BA621001CC0BA /* Nav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nav.h; sourceTree = "<group>"; };
+		914EF6D21B3BA621001CC0BA /* Nav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nav.m; sourceTree = "<group>"; };
+		914EF6D31B3BA621001CC0BA /* NavigationInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationInteractiveTransition.h; sourceTree = "<group>"; };
+		914EF6D41B3BA621001CC0BA /* NavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInteractiveTransition.m; sourceTree = "<group>"; };
+		914EF6D51B3BA621001CC0BA /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
+		914EF6D61B3BA621001CC0BA /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		91839E271B47B54200035CA6 /* FirstCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCustomSegue.h; sourceTree = "<group>"; };
+		91839E281B47B54200035CA6 /* FirstCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCustomSegue.m; sourceTree = "<group>"; };
+		91839E291B47B54200035CA6 /* FirstCustomSegueUnwind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCustomSegueUnwind.h; sourceTree = "<group>"; };
+		91839E2A1B47B54200035CA6 /* FirstCustomSegueUnwind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCustomSegueUnwind.m; sourceTree = "<group>"; };
+		91839E2B1B47B54200035CA6 /* SecondCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCustomSegue.h; sourceTree = "<group>"; };
+		91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomSegue.m; sourceTree = "<group>"; };
+		91839E2D1B47B54200035CA6 /* SecondCustomSegueUnwind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCustomSegueUnwind.h; sourceTree = "<group>"; };
+		91839E2E1B47B54200035CA6 /* SecondCustomSegueUnwind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomSegueUnwind.m; sourceTree = "<group>"; };
 		91EFB44E1B3944BA00516319 /* CustomerTrasitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerTrasitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EFB4521B3944BA00516319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EFB4531B3944BA00516319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +63,10 @@
 		91EFB4671B3944BA00516319 /* CustomerTrasitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerTrasitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EFB46C1B3944BA00516319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EFB46D1B3944BA00516319 /* CustomerTrasitionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerTrasitionDemoTests.m; sourceTree = "<group>"; };
+		91EFB4771B394BC600516319 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		91EFB4781B394BC600516319 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		91EFB47A1B394BD500516319 /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
+		91EFB47B1B394BD500516319 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +87,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		914EF6D01B3BA621001CC0BA /* FullScreenPopNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				914EF6D11B3BA621001CC0BA /* Nav.h */,
+				914EF6D21B3BA621001CC0BA /* Nav.m */,
+				914EF6D31B3BA621001CC0BA /* NavigationInteractiveTransition.h */,
+				914EF6D41B3BA621001CC0BA /* NavigationInteractiveTransition.m */,
+				914EF6D51B3BA621001CC0BA /* PopAnimation.h */,
+				914EF6D61B3BA621001CC0BA /* PopAnimation.m */,
+			);
+			path = FullScreenPopNavigation;
+			sourceTree = "<group>";
+		};
+		91839E261B47B54200035CA6 /* CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				91839E271B47B54200035CA6 /* FirstCustomSegue.h */,
+				91839E281B47B54200035CA6 /* FirstCustomSegue.m */,
+				91839E291B47B54200035CA6 /* FirstCustomSegueUnwind.h */,
+				91839E2A1B47B54200035CA6 /* FirstCustomSegueUnwind.m */,
+				91839E2B1B47B54200035CA6 /* SecondCustomSegue.h */,
+				91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */,
+				91839E2D1B47B54200035CA6 /* SecondCustomSegueUnwind.h */,
+				91839E2E1B47B54200035CA6 /* SecondCustomSegueUnwind.m */,
+			);
+			path = CustomTransition;
+			sourceTree = "<group>";
+		};
 		91EFB4451B3944BA00516319 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +136,18 @@
 		91EFB4501B3944BA00516319 /* CustomerTrasitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				91EFB4551B3944BA00516319 /* AppDelegate.h */,
-				91EFB4561B3944BA00516319 /* AppDelegate.m */,
+				91839E261B47B54200035CA6 /* CustomTransition */,
+				914EF6D01B3BA621001CC0BA /* FullScreenPopNavigation */,
 				91EFB4581B3944BA00516319 /* ViewController.h */,
 				91EFB4591B3944BA00516319 /* ViewController.m */,
 				91EFB45B1B3944BA00516319 /* Main.storyboard */,
 				91EFB45E1B3944BA00516319 /* Images.xcassets */,
 				91EFB4601B3944BA00516319 /* LaunchScreen.xib */,
 				91EFB4511B3944BA00516319 /* Supporting Files */,
+				91EFB4771B394BC600516319 /* secondViewController.h */,
+				91EFB4781B394BC600516319 /* secondViewController.m */,
+				91EFB47A1B394BD500516319 /* thirdViewController.h */,
+				91EFB47B1B394BD500516319 /* thirdViewController.m */,
 			);
 			path = CustomerTrasitionDemo;
 			sourceTree = "<group>";
@@ -96,6 +155,8 @@
 		91EFB4511B3944BA00516319 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91EFB4551B3944BA00516319 /* AppDelegate.h */,
+				91EFB4561B3944BA00516319 /* AppDelegate.m */,
 				91EFB4521B3944BA00516319 /* Info.plist */,
 				91EFB4531B3944BA00516319 /* main.m */,
 			);
@@ -219,9 +280,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */,
+				91839E321B47B54200035CA6 /* SecondCustomSegueUnwind.m in Sources */,
+				91EFB4791B394BC600516319 /* secondViewController.m in Sources */,
+				914EF6D71B3BA621001CC0BA /* Nav.m in Sources */,
 				91EFB45A1B3944BA00516319 /* ViewController.m in Sources */,
 				91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */,
+				91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */,
 				91EFB4541B3944BA00516319 /* main.m in Sources */,
+				91839E2F1B47B54200035CA6 /* FirstCustomSegue.m in Sources */,
+				91EFB47C1B394BD500516319 /* thirdViewController.m in Sources */,
+				914EF6D91B3BA621001CC0BA /* PopAnimation.m in Sources */,
+				914EF6D81B3BA621001CC0BA /* NavigationInteractiveTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +488,7 @@
 				91EFB4731B3944BA00516319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91EFB4741B3944BA00516319 /* Build configuration list for PBXNativeTarget "CustomerTrasitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +497,7 @@
 				91EFB4761B3944BA00516319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
