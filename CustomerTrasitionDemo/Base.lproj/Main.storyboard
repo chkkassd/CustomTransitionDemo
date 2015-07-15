@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nkX-60-hlD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="页面一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPO-9r-OK8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="页面一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPO-9r-OK8">
                                 <rect key="frame" x="16" y="80" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="D0X-f4-sak"/>
@@ -26,7 +26,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-39-74a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-39-74a">
                                 <rect key="frame" x="75" y="433" width="224" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1C8-TX-MSb"/>
@@ -38,7 +38,7 @@
                                     <segue destination="xMd-lA-sFf" kind="custom" identifier="idSecondSegue" customClass="SecondCustomSegue" id="wKt-Ib-uIi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfI-lL-JbF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfI-lL-JbF">
                                 <rect key="frame" x="75" y="355" width="224" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Gja-56-Xgo"/>
@@ -50,15 +50,14 @@
                                     <segue destination="LVw-9c-u33" kind="custom" identifier="idFirstSegue" customClass="FirstCustomSegue" id="2xp-1m-A35"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhB-6g-PPz">
-                                <rect key="frame" x="164" y="498" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="p8t-HK-cSu" kind="push" id="DqV-SY-Z3L"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moy-sy-QKZ">
+                                <rect key="frame" x="16" y="138" width="40" height="42"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9SR-ks-xn1">
+                                <rect key="frame" x="156" y="222" width="51" height="46"/>
+                                <color key="backgroundColor" red="0.39601571070000002" green="0.75079811590000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.65677426617983825" blue="0.66839920251107321" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -75,6 +74,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="yPy-sF-yRt"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueView" destination="9SR-ks-xn1" id="5wO-aM-kb2"/>
+                        <outlet property="browView" destination="moy-sy-QKZ" id="lkF-HR-TFC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,28 +132,6 @@
             </objects>
             <point key="canvasLocation" x="1765.5" y="72.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6kQ-ot-Zq2">
-            <objects>
-                <viewController id="p8t-HK-cSu" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eft-C2-KYV"/>
-                        <viewControllerLayoutGuide type="bottom" id="LRG-td-hjA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fBk-KS-B4P">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="9M7-gc-ony">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Utc-kd-GOh"/>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ehh-Od-FXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1227" y="1235"/>
-        </scene>
         <!--Third View Controller-->
         <scene sceneID="Tld-iQ-Z6Q">
             <objects>
@@ -189,24 +170,6 @@
                 <exit id="4fF-Vm-d36" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1759.5" y="820.5"/>
-        </scene>
-        <!--Nav-->
-        <scene sceneID="HmU-Fh-Id5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nkX-60-hlD" customClass="Nav" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1gn-oa-WOk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2en-VS-F58"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oo2-Ab-Obj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="415" y="468"/>
         </scene>
     </scenes>
 </document>
