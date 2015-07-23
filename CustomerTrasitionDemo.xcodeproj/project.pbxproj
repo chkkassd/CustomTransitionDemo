@@ -14,6 +14,9 @@
 		91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2A1B47B54200035CA6 /* FirstCustomSegueUnwind.m */; };
 		91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */; };
 		91839E321B47B54200035CA6 /* SecondCustomSegueUnwind.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2E1B47B54200035CA6 /* SecondCustomSegueUnwind.m */; };
+		919D856D1B5CC6CC00FE3A53 /* AnimatedTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */; };
+		919D85701B608BF500FE3A53 /* forthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D856F1B608BF500FE3A53 /* forthViewController.m */; };
+		919D85731B60DD9600FE3A53 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D85721B60DD9600FE3A53 /* fiveViewController.m */; };
 		91EFB4541B3944BA00516319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4531B3944BA00516319 /* main.m */; };
 		91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4561B3944BA00516319 /* AppDelegate.m */; };
 		91EFB45A1B3944BA00516319 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4591B3944BA00516319 /* ViewController.m */; };
@@ -50,6 +53,12 @@
 		91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomSegue.m; sourceTree = "<group>"; };
 		91839E2D1B47B54200035CA6 /* SecondCustomSegueUnwind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCustomSegueUnwind.h; sourceTree = "<group>"; };
 		91839E2E1B47B54200035CA6 /* SecondCustomSegueUnwind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCustomSegueUnwind.m; sourceTree = "<group>"; };
+		919D856B1B5CC6CC00FE3A53 /* AnimatedTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitionController.h; sourceTree = "<group>"; };
+		919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitionController.m; sourceTree = "<group>"; };
+		919D856E1B608BF500FE3A53 /* forthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forthViewController.h; sourceTree = "<group>"; };
+		919D856F1B608BF500FE3A53 /* forthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forthViewController.m; sourceTree = "<group>"; };
+		919D85711B60DD9600FE3A53 /* fiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveViewController.h; sourceTree = "<group>"; };
+		919D85721B60DD9600FE3A53 /* fiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveViewController.m; sourceTree = "<group>"; };
 		91EFB44E1B3944BA00516319 /* CustomerTrasitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerTrasitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EFB4521B3944BA00516319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EFB4531B3944BA00516319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,13 +150,19 @@
 				91EFB45B1B3944BA00516319 /* Main.storyboard */,
 				91EFB45E1B3944BA00516319 /* Images.xcassets */,
 				91EFB4601B3944BA00516319 /* LaunchScreen.xib */,
-				91EFB4511B3944BA00516319 /* Supporting Files */,
 				91EFB4581B3944BA00516319 /* ViewController.h */,
 				91EFB4591B3944BA00516319 /* ViewController.m */,
 				91EFB4771B394BC600516319 /* secondViewController.h */,
 				91EFB4781B394BC600516319 /* secondViewController.m */,
 				91EFB47A1B394BD500516319 /* thirdViewController.h */,
 				91EFB47B1B394BD500516319 /* thirdViewController.m */,
+				919D856E1B608BF500FE3A53 /* forthViewController.h */,
+				919D856F1B608BF500FE3A53 /* forthViewController.m */,
+				919D85711B60DD9600FE3A53 /* fiveViewController.h */,
+				919D85721B60DD9600FE3A53 /* fiveViewController.m */,
+				91EFB4511B3944BA00516319 /* Supporting Files */,
+				919D856B1B5CC6CC00FE3A53 /* AnimatedTransitionController.h */,
+				919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */,
 			);
 			path = CustomerTrasitionDemo;
 			sourceTree = "<group>";
@@ -282,11 +297,14 @@
 			files = (
 				91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */,
 				91839E321B47B54200035CA6 /* SecondCustomSegueUnwind.m in Sources */,
+				919D856D1B5CC6CC00FE3A53 /* AnimatedTransitionController.m in Sources */,
 				91EFB4791B394BC600516319 /* secondViewController.m in Sources */,
+				919D85701B608BF500FE3A53 /* forthViewController.m in Sources */,
 				914EF6D71B3BA621001CC0BA /* Nav.m in Sources */,
 				91EFB45A1B3944BA00516319 /* ViewController.m in Sources */,
 				91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */,
 				91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */,
+				919D85731B60DD9600FE3A53 /* fiveViewController.m in Sources */,
 				91EFB4541B3944BA00516319 /* main.m in Sources */,
 				91839E2F1B47B54200035CA6 /* FirstCustomSegue.m in Sources */,
 				91EFB47C1B394BD500516319 /* thirdViewController.m in Sources */,
