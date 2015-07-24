@@ -17,6 +17,7 @@
 		919D856D1B5CC6CC00FE3A53 /* AnimatedTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */; };
 		919D85701B608BF500FE3A53 /* forthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D856F1B608BF500FE3A53 /* forthViewController.m */; };
 		919D85731B60DD9600FE3A53 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D85721B60DD9600FE3A53 /* fiveViewController.m */; };
+		919D85761B61D32000FE3A53 /* mainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919D85751B61D32000FE3A53 /* mainTabbarController.m */; };
 		91EFB4541B3944BA00516319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4531B3944BA00516319 /* main.m */; };
 		91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4561B3944BA00516319 /* AppDelegate.m */; };
 		91EFB45A1B3944BA00516319 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EFB4591B3944BA00516319 /* ViewController.m */; };
@@ -59,6 +60,8 @@
 		919D856F1B608BF500FE3A53 /* forthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forthViewController.m; sourceTree = "<group>"; };
 		919D85711B60DD9600FE3A53 /* fiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveViewController.h; sourceTree = "<group>"; };
 		919D85721B60DD9600FE3A53 /* fiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveViewController.m; sourceTree = "<group>"; };
+		919D85741B61D32000FE3A53 /* mainTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainTabbarController.h; sourceTree = "<group>"; };
+		919D85751B61D32000FE3A53 /* mainTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainTabbarController.m; sourceTree = "<group>"; };
 		91EFB44E1B3944BA00516319 /* CustomerTrasitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerTrasitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EFB4521B3944BA00516319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91EFB4531B3944BA00516319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				919D856F1B608BF500FE3A53 /* forthViewController.m */,
 				919D85711B60DD9600FE3A53 /* fiveViewController.h */,
 				919D85721B60DD9600FE3A53 /* fiveViewController.m */,
+				919D85741B61D32000FE3A53 /* mainTabbarController.h */,
+				919D85751B61D32000FE3A53 /* mainTabbarController.m */,
 				91EFB4511B3944BA00516319 /* Supporting Files */,
 				919D856B1B5CC6CC00FE3A53 /* AnimatedTransitionController.h */,
 				919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */,
@@ -301,6 +306,7 @@
 				91EFB4791B394BC600516319 /* secondViewController.m in Sources */,
 				919D85701B608BF500FE3A53 /* forthViewController.m in Sources */,
 				914EF6D71B3BA621001CC0BA /* Nav.m in Sources */,
+				919D85761B61D32000FE3A53 /* mainTabbarController.m in Sources */,
 				91EFB45A1B3944BA00516319 /* ViewController.m in Sources */,
 				91EFB4571B3944BA00516319 /* AppDelegate.m in Sources */,
 				91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */,

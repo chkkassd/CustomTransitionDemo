@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface forthViewController : UIViewController
-
+@property (strong, nonatomic) UIPercentDrivenInteractiveTransition *interactiveTran;
 @end

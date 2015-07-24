@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIView *browView;
 @property (weak, nonatomic) IBOutlet UIView *blueView;
 @property (strong, nonatomic) AnimatedTransitionController *animatedTransitionController;
+@property (strong, nonatomic) UIPercentDrivenInteractiveTransition *interactiveTransition;
 
 @end
 
@@ -54,6 +55,7 @@
     } completion:NULL];
     
     self.animatedTransitionController = [[AnimatedTransitionController alloc] init];
+    self.interactiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
 }
 
 - (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
@@ -69,6 +71,7 @@
     forthViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"forthViewController"];
     vc.modalPresentationStyle = UIModalPresentationCustom;
     vc.transitioningDelegate = self;
+    vc.interactiveTran = self.interactiveTransition;
     [self presentViewController:vc animated:YES completion:NULL];
 }
 
@@ -79,19 +82,27 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
 #pragma mark - UIViewControllerTransitioningDelegate
 
 - (id)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-//    AnimatedTransitionController *animatedTransitionController = [[AnimatedTransitionController alloc] init];
     self.animatedTransitionController.animationType = AnimationTypePresent;
     return self.animatedTransitionController;
 }
 
 - (id)animationControllerForDismissedController:(UIViewController *)dismissed {
-//    AnimatedTransitionController *animatedTransitionController = [[AnimatedTransitionController alloc] init];
     self.animatedTransitionController.animationType = AnimationTypeDismiss;
     return self.animatedTransitionController;
+}
+
+//交互转场
+- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator {
+    return nil;
+}
+
+- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
+    if ([animator isKindOfClass:[AnimatedTransitionController class]]) {
+        return self.interactiveTransition;
+    } else return nil;
 }
 
 #pragma mark - UINavigationControllerDelegate

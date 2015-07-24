@@ -18,7 +18,7 @@
     UIViewController *toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
-    if (self.animationType == AnimationTypePresent || self.animationType == AnimationTypePush) {
+    if (self.animationType == AnimationTypePresent || self.animationType == AnimationTypePush || self.animationType == AnimationTypeTabBar) {
         toVc.view.transform = CGAffineTransformMakeScale(0.1, 0.1);
         toVc.view.frame = CGRectOffset(toVc.view.frame, 0, height);
        

@@ -12,7 +12,8 @@
 typedef enum {
     AnimationTypePresent,
     AnimationTypeDismiss,
-    AnimationTypePush
+    AnimationTypePush,
+    AnimationTypeTabBar
 }AnimationType;
 
 @interface AnimatedTransitionController : NSObject<UIViewControllerAnimatedTransitioning>
