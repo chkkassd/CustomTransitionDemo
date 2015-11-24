@@ -30,8 +30,8 @@
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];//完成动画后需要调用
         }];
-    } else if (self.animationType == AnimationTypeDismiss) {
-//        [containerView insertSubview:toVc.view belowSubview:fromVc.view];
+    } else if (self.animationType == AnimationTypeDismiss || self.animationType == AnimationTypePop) {
+        [containerView insertSubview:toVc.view belowSubview:fromVc.view];
         NSLog(@"dd%@",NSStringFromCGRect(toVc.view.frame));
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             fromVc.view.transform = CGAffineTransformMakeScale(0.1, 0.1);

@@ -10,6 +10,7 @@
 		914EF6D71B3BA621001CC0BA /* Nav.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D21B3BA621001CC0BA /* Nav.m */; };
 		914EF6D81B3BA621001CC0BA /* NavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D41B3BA621001CC0BA /* NavigationInteractiveTransition.m */; };
 		914EF6D91B3BA621001CC0BA /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EF6D61B3BA621001CC0BA /* PopAnimation.m */; };
+		917C1AA91C04115E0035E109 /* InteractiveTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917C1AA81C04115E0035E109 /* InteractiveTransitionController.m */; };
 		91839E2F1B47B54200035CA6 /* FirstCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E281B47B54200035CA6 /* FirstCustomSegue.m */; };
 		91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2A1B47B54200035CA6 /* FirstCustomSegueUnwind.m */; };
 		91839E311B47B54200035CA6 /* SecondCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 91839E2C1B47B54200035CA6 /* SecondCustomSegue.m */; };
@@ -46,6 +47,8 @@
 		914EF6D41B3BA621001CC0BA /* NavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInteractiveTransition.m; sourceTree = "<group>"; };
 		914EF6D51B3BA621001CC0BA /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
 		914EF6D61B3BA621001CC0BA /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		917C1AA71C04115E0035E109 /* InteractiveTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitionController.h; sourceTree = "<group>"; };
+		917C1AA81C04115E0035E109 /* InteractiveTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitionController.m; sourceTree = "<group>"; };
 		91839E271B47B54200035CA6 /* FirstCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCustomSegue.h; sourceTree = "<group>"; };
 		91839E281B47B54200035CA6 /* FirstCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCustomSegue.m; sourceTree = "<group>"; };
 		91839E291B47B54200035CA6 /* FirstCustomSegueUnwind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCustomSegueUnwind.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				91EFB4511B3944BA00516319 /* Supporting Files */,
 				919D856B1B5CC6CC00FE3A53 /* AnimatedTransitionController.h */,
 				919D856C1B5CC6CC00FE3A53 /* AnimatedTransitionController.m */,
+				917C1AA71C04115E0035E109 /* InteractiveTransitionController.h */,
+				917C1AA81C04115E0035E109 /* InteractiveTransitionController.m */,
 			);
 			path = CustomerTrasitionDemo;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				TargetAttributes = {
 					91EFB44D1B3944BA00516319 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7TS24BB22U;
 					};
 					91EFB4661B3944BA00516319 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -302,6 +308,7 @@
 			files = (
 				91839E301B47B54200035CA6 /* FirstCustomSegueUnwind.m in Sources */,
 				91839E321B47B54200035CA6 /* SecondCustomSegueUnwind.m in Sources */,
+				917C1AA91C04115E0035E109 /* InteractiveTransitionController.m in Sources */,
 				919D856D1B5CC6CC00FE3A53 /* AnimatedTransitionController.m in Sources */,
 				91EFB4791B394BC600516319 /* secondViewController.m in Sources */,
 				919D85701B608BF500FE3A53 /* forthViewController.m in Sources */,
@@ -443,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CustomerTrasitionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CustomerTrasitionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,6 +13,7 @@ typedef enum {
     AnimationTypePresent,
     AnimationTypeDismiss,
     AnimationTypePush,
+    AnimationTypePop,
     AnimationTypeTabBar
 }AnimationType;
 

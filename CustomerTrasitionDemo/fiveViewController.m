@@ -7,8 +7,9 @@
 //
 
 #import "fiveViewController.h"
+#import "AnimatedTransitionController.h"
 
-@interface fiveViewController ()
+@interface fiveViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -16,8 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
+}
 
 @end
